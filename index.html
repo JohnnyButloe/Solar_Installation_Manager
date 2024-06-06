@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Installations Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Solar Installations Manager</h1>
+    <form id="installation-form">
+        <input type="text" id="location" placeholder="Location" required>
+        <input type="number" id="capacity" placeholder="Capacity (kW)" required>
+        <button type="submit">Add Installation</button>
+    </form>
+    <input type="text" id="search" placeholder="Search by location">
+    <ul id="installations-list"></ul>
+    <canvas id="capacityChart"></canvas>
+    <button id="export-btn">Export CSV</button>
+    <button id="import-btn">Import CSV</button>
+    <input type="file" id="import-file" style="display: none;">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
